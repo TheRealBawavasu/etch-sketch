@@ -1,0 +1,45 @@
+:root {
+  --grid-size: 960px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1rem;
+}
+
+#resize-btn {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 0.4rem;
+  background: #fff;
+  cursor: pointer;
+}
+
+#grid-container {
+  width: min(var(--grid-size), 95vw);
+  height: min(var(--grid-size), 95vw);
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #333;
+  background: #fff;
+}
+
+.grid-square {
+  border: 1px solid #e3e3e3;
+}
